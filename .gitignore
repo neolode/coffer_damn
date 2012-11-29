@@ -1,4 +1,13 @@
 #################
+## Unity
+#################
+build/
+Library/previews/
+Library/metadata/
+Library/cache/
+Library/cache/
+
+#################
 ## Eclipse
 #################
 
