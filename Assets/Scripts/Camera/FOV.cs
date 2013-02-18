@@ -9,11 +9,16 @@ public class FOV : MonoBehaviour {
     public Camera mainCam;
 	// Use this for initialization
 	void Start () {
-	    mainCam = Camera.main;
+		if(Camera.main != null)
+	    	mainCam = Camera.main;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(Camera.main == null){
+			Debug.Log("No MainCamera defined for FOV.cs");
+			return;
+		}
         if (mainCam != Camera.main) {
             mainCam = Camera.main;
         }
@@ -33,6 +38,8 @@ public class FOV : MonoBehaviour {
         //and just to avoid unecesary atributions
         if (curFOV != mainCam.fov){
             mainCam.fieldOfView = curFOV;
+			Debug.Log("FOV set to:" + curFOV);
         }
+		
 	}
 }
