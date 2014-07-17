@@ -2,11 +2,17 @@
 ## Unity
 #################
 build/
-Library/previews/
-Library/metadata/
-Library/cache/
-Library/cache/
-Library/ScriptAssemblies/
+Library/
+Temp/
+obj/
+Assembly-CSharp.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-Editor-vs.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp-firstpass-vs.csproj
+fps_framework.sln
+fps_framework-csharp.sln
 
 #################
 ## Eclipse
